@@ -2,16 +2,19 @@
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
-import { BrowserRouter } from 'react-router-dom'
+// import { BrowserRouter } from 'react-router-dom'
+import { HashRouter } from "react-router-dom";
 import Productcontext from './context/Productcontext.jsx'
 
 createRoot(document.getElementById('root')).render(
  
-    <BrowserRouter>
+    // <BrowserRouter>
+    <HashRouter>
     <Productcontext>
          <App />
     </Productcontext>
+    </HashRouter>
    
-    </BrowserRouter>
+    // </BrowserRouter>
  
 )
